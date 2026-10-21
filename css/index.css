@@ -1,0 +1,260 @@
+/* Importação e configuração de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Michroma&display=swap');
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.michroma-regular {
+    font-family: "Michroma", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.martel-sans-extralight {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.martel-sans-light {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.martel-sans-regular {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.martel-sans-semibold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.martel-sans-bold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.martel-sans-extrabold {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.martel-sans-black {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*Fim de importação e configuração de fontes */
+
+/* Estilos genéricos */
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background: none;
+    /* border-style: none; */
+}
+
+
+/* Estilo do cabeçalho */
+
+.barra-titulo {
+    background-color: rgba(208, 203, 203, 0.675);
+}
+
+.logotipo {
+    text-align: center;
+    padding: 5px;
+}
+
+.logotipo img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(115, 113, 113);
+    width: 60px;
+}
+
+.logotipo img:hover {
+    scale: 1.05;
+}
+
+header h1 {
+    text-align: center;
+    /*background-color: rgba(208, 203, 203, 0.675);*/
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 3px 3px 7px rgb(253, 252, 252);
+}
+
+.barra-icones {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(216, 228, 227, 0.605);
+    height: 70px;
+}
+
+.icone {
+    font-size: 30px;
+    color: rgb(84, 131, 131);
+}
+
+.icone:hover {
+    font-size: 35px;
+}
+
+
+/* Estilo dos titulos de secção */
+
+main h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+section {
+    margin-top: 40px;
+    padding-top: 100px;
+}
+
+#seccao-projectos,
+#seccao-sobre {
+    background-color: rgb(234, 247, 246);
+    padding-bottom: 20px;
+}
+
+#seccao-projectos .card img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.titulo-projectos,
+.titulo-tecnologias {
+    /*margin-top: 50px;*/
+    padding-bottom: 20px;
+}
+
+.logo-formacao {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 1rem;
+}
+
+.descritivo-projetos {
+    text-align: justify;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#seccao-tecnologias {
+    background-color: rgb(204, 237, 230);
+    padding: 20px;
+}
+
+.titulo-tecnologias {
+    margin-top: 50px;
+}
+
+
+.imagem-tecnologia {
+    text-align: center;
+}
+
+.imagem-tecnologia img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+footer {
+    background-color: rgba(230, 239, 237, 0.675);
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.rodape {
+    text-align: center;
+    font-weight: normal;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Configuração do botao topo */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.botao-topo {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.botao-topo i {
+    opacity: 0;
+    font-size: 30px;
+    border-radius: 50%;
+    bottom: 80px;
+    animation: fade-out 0s;
+}
+
+.botao-topo-mostrar i {
+    animation: fade-in 0.7s ease-in forwards;
+}
+
+.botao-topo-esconder i {
+    animation: fade-out 0.7s ease-out forwards;
+}
+
+/* Fim configuração botao topo */
+
+.img-carousel {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 599px) {
+    .descritivo-projetos {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+}
